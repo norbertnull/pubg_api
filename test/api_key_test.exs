@@ -10,7 +10,6 @@ defmodule PubgApiTest.ApiKey do
       api_key = "api_key"
       header_map = %{}
       |> PubgApi.ApiKey.add_to_headers(api_key)
-
       assert header_map["Authorization"] == "Bearer api_key"
     end
   end
